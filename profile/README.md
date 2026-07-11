@@ -1,228 +1,655 @@
-# 🍽️ scanCrunch
+# 🍽️ ScanCrunch
 
-**Scan. Browse. Order. Enjoy.**
+> **Scan. Browse. Order. Enjoy.**
 
-scanCrunch is a smart QR-based food ordering platform that enables customers to order food directly from their table by scanning a QR code. The application provides a seamless digital dining experience by allowing customers to browse menus, place orders, make payments, and track their orders without waiting for a waiter.
+ScanCrunch is a modern QR-based restaurant ordering platform that enables customers to scan a QR code, browse digital menus, place orders, make secure payments, and track their orders in real time—without waiting for a waiter.
 
----
-
-## 📌 Overview
-
-scanCrunch is designed for restaurants, cafés, hotels, and food courts that want to digitize their ordering process.
-
-Customers simply scan a QR code placed on their table or at the restaurant entrance to access the restaurant's digital menu. They can browse items, customize their orders, place them instantly, and receive live order updates.
+Designed for restaurants, cafés, hotels, food courts, and cloud kitchens, ScanCrunch delivers a seamless, contactless dining experience while helping businesses improve operational efficiency.
 
 ---
 
-## ✨ Features
+## 📖 Table of Contents
 
-### 👤 Customer Features
-
-- 📱 Scan QR code to access restaurant menu
-- 🍔 Browse categories and food items
-- 🔍 Search for dishes
-- 📖 View detailed item information
-- 🖼️ Food images
-- 📝 Description and ingredients
-- 🌶️ Spice level and dietary information
-- ⭐ Customer ratings & reviews
-- 💰 Price and available offers
-- ➕ Customize food items
-- 🛒 Add items to cart
-- ❤️ Save favorite dishes
-- 🎁 Apply coupons and discounts
-- 💳 Secure online payment
-- 💵 Cash on Delivery (optional)
-- 📍 Table-based ordering
-- 🚚 Live order status tracking
-- 📜 Order history
-- 🔔 Real-time notifications
-- 🌐 Multi-language support
-- 🌙 Dark Mode
+- Overview
+- Features
+- System Modules
+- Tech Stack
+- Architecture
+- Project Structure
+- Workflow
+- Installation
+- Environment Variables
+- API Overview
+- Security
+- Deployment
+- Future Roadmap
+- Contributing
+- License
 
 ---
 
-### 🏨 Restaurant Features
+# 📌 Overview
 
-- Restaurant Dashboard
+Traditional restaurant ordering involves waiting for menus, waiters, and payment processing. ScanCrunch digitizes the complete ordering journey using QR technology.
+
+Customers simply scan a QR code placed on the table to access the restaurant's digital menu. They can customize dishes, place orders instantly, pay online, and receive live order updates while the restaurant and kitchen manage everything through dedicated dashboards.
+
+---
+
+# ✨ Features
+
+## 👤 Customer
+
+- QR Code Menu Access
+- Browse Categories
+- Search Food
+- Food Images
+- Item Details
+- Ingredients
+- Spice Level
+- Dietary Information
+- Ratings & Reviews
+- Add to Cart
+- Favorites
+- Food Customization
+- Coupons & Offers
+- Secure Payments
+- Cash on Delivery (Optional)
+- Live Order Tracking
+- Order History
+- Notifications
+- Dark Mode
+- Multi-language Support
+
+---
+
+## 🏨 Restaurant
+
+- Dashboard
 - Menu Management
 - Category Management
-- QR Code Generation
+- QR Code Generator
 - Order Management
-- Kitchen Order Display
 - Inventory Management
 - Staff Management
-- Offer & Coupon Management
-- Analytics Dashboard
-- Sales Reports
 - Customer Reviews
-- Restaurant Profile Management
+- Coupons
+- Analytics
+- Sales Reports
+- Restaurant Profile
 
 ---
 
-### 👨‍🍳 Kitchen Features
+## 👨‍🍳 Kitchen
 
-- Receive live orders
-- Update cooking status
-- Mark orders as:
-  - Preparing
-  - Ready
-  - Served
+- Live Orders
 - Kitchen Dashboard
 - Priority Orders
+- Cooking Status Updates
+- Ready Orders
+- Served Orders
 
 ---
 
-### 👨‍💼 Admin Features
+## 👨‍💼 Admin
 
 - Restaurant Management
 - User Management
-- Order Monitoring
-- Reports & Analytics
-- Payment Management
-- Subscription Management
-- System Settings
+- Payments
+- Reports
+- Analytics
 - Notifications
-- Role & Permission Management
+- Subscription Plans
+- Role Management
+- System Settings
 
 ---
 
-## 📲 How It Works
+# 🚀 Benefits
 
-1. Customer visits the restaurant.
-2. Scans the QR code using the ScanCrunch app.
-3. Restaurant menu opens automatically.
-4. Customer browses food items.
-5. Adds dishes to the cart.
-6. Places the order.
-7. Restaurant receives the order instantly.
-8. Kitchen prepares the food.
-9. Customer receives live order updates.
-10. Food is served.
+## Customers
 
----
+- Contactless Ordering
+- Faster Service
+- Secure Payments
+- Better Dining Experience
+- Live Order Updates
 
-## 🚀 Benefits
+## Restaurants
 
-### For Customers
-
-- No waiting for menus
-- Faster ordering
-- Contactless experience
-- Easy payments
-- Live order tracking
-- Better dining experience
-
-### For Restaurants
-
-- Faster service
-- Reduced manual errors
-- Increased customer satisfaction
-- Digital menu management
-- Better sales insights
-- Lower operational costs
+- Reduced Manual Errors
+- Increased Revenue
+- Faster Table Turnover
+- Better Customer Experience
+- Digital Menu Management
+- Analytics Dashboard
 
 ---
 
-## 🛠️ Tech Stack
+# 🏗️ System Architecture
 
-Frontend
-- React / Next.js
-- Flutter (Mobile App)
+```
+Customer
+      │
+      ▼
+ QR Code Scan
+      │
+      ▼
+React Frontend
+      │
+ REST API
+      │
+      ▼
+Spring Boot Backend
+      │
+      ▼
+MySQL Database
+      │
+      ▼
+AWS Cloud Services
+```
 
-Backend
-- Node.js
-- Express.js
+---
 
-Database
-- PostgreSQL / MongoDB
+# ⚙️ Tech Stack
 
-Authentication
+## Frontend
+
+- React.js
+- React Router
+- Tailwind CSS
+- Axios
+- Redux Toolkit
+- React Query
+- Framer Motion
+- ShadCN UI
+
+---
+
+## Backend
+
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- JWT Authentication
+- REST APIs
+- WebSocket
+- Maven
+
+---
+
+## Database
+
+- MySQL
+
+---
+
+## DevOps
+
+- Docker
+- Kubernetes
+- GitHub Actions
+- AWS EC2
+- AWS RDS
+- AWS S3
+- AWS CloudFront
+- Nginx
+
+---
+
+## Authentication
+
 - JWT
-- OAuth
+- Refresh Tokens
+- Role Based Authentication
 
-Storage
-- AWS S3 / Cloud Storage
+---
 
-Payments
+## Payment Gateway
+
 - Stripe
 - Razorpay
 
-Notifications
-- Firebase Cloud Messaging
+---
 
-Deployment
-- Docker
-- Kubernetes
-- AWS / Azure / GCP
+## Notifications
+
+- Firebase Cloud Messaging
 
 ---
 
-## 📂 Project Structure
+# 📂 Repository Structure
 
 ```
 scancrunch/
-│
+
 ├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── README.md
+│
 ├── backend/
-├── mobile/
-├── admin-panel/
+│   ├── src/
+│   ├── pom.xml
+│   └── README.md
+│
 ├── docs/
-├── database/
+│
 ├── docker/
+│
+├── database/
+│
 └── README.md
 ```
 
 ---
 
-## 🔒 Security
+# 🗂️ Frontend Structure
+
+```
+src/
+
+components/
+
+layouts/
+
+pages/
+
+hooks/
+
+services/
+
+store/
+
+routes/
+
+assets/
+
+animations/
+
+styles/
+
+utils/
+```
+
+---
+
+# 🗂️ Backend Structure
+
+```
+src/main/java/
+
+config/
+
+controller/
+
+service/
+
+repository/
+
+entity/
+
+dto/
+
+mapper/
+
+security/
+
+websocket/
+
+exception/
+
+utils/
+```
+
+---
+
+# 🔄 Workflow
+
+```
+Customer
+
+↓
+
+Scan QR
+
+↓
+
+Browse Menu
+
+↓
+
+Add to Cart
+
+↓
+
+Checkout
+
+↓
+
+Payment
+
+↓
+
+Restaurant Receives Order
+
+↓
+
+Kitchen Starts Preparing
+
+↓
+
+Order Ready
+
+↓
+
+Served
+
+↓
+
+Order Completed
+```
+
+---
+
+# 📱 Screens
+
+- Landing Page
+- Restaurant Menu
+- Food Details
+- Cart
+- Checkout
+- Payment
+- Order Tracking
+- Restaurant Dashboard
+- Kitchen Dashboard
+- Admin Dashboard
+
+---
+
+# 🎨 UI Highlights
+
+- Modern Glassmorphism
+- Responsive Design
+- Dark Mode
+- Smooth Animations
+- Skeleton Loading
+- Beautiful Charts
+- Floating Action Buttons
+- Interactive Cards
+- Animated Buttons
+- Mobile First Design
+
+---
+
+# 📡 API Modules
+
+## Authentication
+
+- Login
+- Register
+- Refresh Token
+
+---
+
+## Restaurant
+
+- Get Restaurant
+- Update Restaurant
+- Upload Logo
+
+---
+
+## Menu
+
+- Categories
+- Food Items
+- Search
+- Offers
+
+---
+
+## Orders
+
+- Create Order
+- Update Status
+- Cancel Order
+- Order History
+
+---
+
+## Payments
+
+- Stripe
+- Razorpay
+- Refunds
+
+---
+
+## Reviews
+
+- Add Review
+- View Reviews
+
+---
+
+# 🔒 Security
 
 - JWT Authentication
-- HTTPS Encryption
-- Secure Payments
-- Role-Based Access Control
+- HTTPS
+- BCrypt Password Encryption
+- Role Based Access Control
 - Input Validation
+- SQL Injection Protection
+- CORS Configuration
 - Rate Limiting
+- Secure Cookies
 
 ---
 
-## 📈 Future Roadmap
+# 🌐 Deployment
 
-- AI Food Recommendations
+## Frontend
+
+- AWS S3
+- CloudFront
+
+## Backend
+
+- AWS EC2
+- Docker
+- Nginx
+
+## Database
+
+- AWS RDS (MySQL)
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-org/scancrunch.git
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
+## Backend
+
+```bash
+cd backend
+
+./mvnw spring-boot:run
+```
+
+---
+
+# ⚙️ Environment Variables
+
+## Frontend
+
+```env
+VITE_API_URL=http://localhost:8080/api
+
+VITE_FIREBASE_KEY=
+
+VITE_STRIPE_KEY=
+```
+
+---
+
+## Backend
+
+```env
+MYSQL_URL=
+
+MYSQL_USERNAME=
+
+MYSQL_PASSWORD=
+
+JWT_SECRET=
+
+JWT_EXPIRATION=
+
+AWS_ACCESS_KEY=
+
+AWS_SECRET_KEY=
+
+AWS_REGION=
+
+RAZORPAY_KEY=
+
+RAZORPAY_SECRET=
+```
+
+---
+
+# 🐳 Docker
+
+Build
+
+```bash
+docker-compose build
+```
+
+Run
+
+```bash
+docker-compose up
+```
+
+---
+
+# ☁️ AWS Services
+
+- EC2
+- RDS
+- S3
+- CloudFront
+- IAM
+- CloudWatch
+- Route53
+- Certificate Manager
+
+---
+
+# 📈 Future Roadmap
+
+- AI Food Recommendation
 - Voice Ordering
-- Loyalty Rewards
-- Table Reservation
+- Loyalty Program
 - Waiter Calling
+- Smart Kitchen Display
 - Split Bills
 - Subscription Plans
-- Restaurant Analytics AI
-- Smart Kitchen Integration
-- Delivery Partner Integration
+- Delivery Integration
+- Restaurant AI Analytics
+- QR Table Reservation
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
-We welcome contributions from the community.
+We welcome contributions from everyone.
 
 1. Fork the repository
 2. Create a feature branch
-3. Commit your changes
-4. Push the branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push branch
+
+```bash
+git push origin feature/new-feature
+```
+
 5. Create a Pull Request
 
 ---
 
-## 📄 License
+# 👨‍💻 Development Team
 
-This project is licensed under the MIT License.
+| Role | Technology |
+|------|------------|
+| Frontend | React.js |
+| Backend | Spring Boot |
+| Database | MySQL |
+| DevOps | Docker • Kubernetes • AWS |
 
 ---
 
-## 🌟 Vision
+# 📄 License
 
-Our vision is to transform traditional restaurant dining into a fully digital, contactless, and intelligent ordering experience that benefits both customers and restaurants.
+This project is licensed under the **MIT License**.
 
 ---
 
-**Scan. Crunch. Enjoy. 🍽️**
+# 🌟 Vision
+
+Our vision is to revolutionize restaurant dining by providing a fast, intelligent, secure, and completely digital ordering experience that benefits customers, restaurants, and staff alike.
+
+---
+
+# ❤️ Built With
+
+- React.js
+- Spring Boot
+- MySQL
+- AWS Cloud
+- Docker
+- Kubernetes
+- Tailwind CSS
+- Framer Motion
+
+---
+
+<div align="center">
+
+## 🍽️ Scan. Browse. Order. Enjoy.
+
+**Made with ❤️ by the ScanCrunch Team**
+
+</div>
