@@ -1,14 +1,14 @@
-# 🍽️ ScanCrunch
+# 🍽️ scanCrunch
 
 **Scan. Browse. Order. Enjoy.**
 
-ScanCrunch is a smart QR-based food ordering platform that enables customers to order food directly from their table by scanning a QR code. The application provides a seamless digital dining experience by allowing customers to browse menus, place orders, make payments, and track their orders without waiting for a waiter.
+scanCrunch is a smart QR-based food ordering platform that enables customers to order food directly from their table by scanning a QR code. The application provides a seamless digital dining experience by allowing customers to browse menus, place orders, make payments, and track their orders without waiting for a waiter.
 
 ---
 
 ## 📌 Overview
 
-ScanCrunch is designed for restaurants, cafés, hotels, and food courts that want to digitize their ordering process.
+scanCrunch is designed for restaurants, cafés, hotels, and food courts that want to digitize their ordering process.
 
 Customers simply scan a QR code placed on their table or at the restaurant entrance to access the restaurant's digital menu. They can browse items, customize their orders, place them instantly, and receive live order updates.
 
