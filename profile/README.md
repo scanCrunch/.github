@@ -1,4 +1,4 @@
-# 🍽️ ScanCrunch
+# 🍽️ scanCrunch
 
 > **Scan. Browse. Order. Enjoy.**
 
